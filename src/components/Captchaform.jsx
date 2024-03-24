@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from 'axios';
+import {Link} from "react-router-dom"
 
 const Captchaform = () => {
     const [captcha, setCaptcha] = useState(false);
@@ -77,6 +78,7 @@ async function handleCountryChange(e) {
 
 
     return (
+        <>
         <form onSubmit={handleSubmit}>
             <div>
                 <div>
@@ -136,6 +138,11 @@ async function handleCountryChange(e) {
                 <button disabled={!captcha}>Submit</button>
             </div>                  
         </form>
+         <Link to="/post">
+         <button>Next</button>
+         </Link>
+         </>
+       
     );
 };
 

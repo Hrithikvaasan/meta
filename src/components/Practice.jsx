@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Divider, Table, Modal, Input, Button } from 'antd';
 import axios from 'axios';
 import { Helmet } from 'react-helmet-async';
+import {Link} from "react-router-dom"
 
 export default function Practice() {
 
@@ -119,6 +120,9 @@ export default function Practice() {
             <div className="font-semibold text-2xl text-subheading ml-12 mt-2">
                 <h1 className='user-select-none'>User Info</h1>
             </div>
+            <Link to="/create">
+        <button>Next</button>
+        </Link>
             <div className='ml-12 mt-4'>
                 <Divider />
                 <Table

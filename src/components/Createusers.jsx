@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+import {Link} from "react-router-dom"
 
 const options =[
     {value:"datascience",label:'Data Science'},
@@ -120,6 +121,9 @@ const Createusers = () => {
             </div>
             <button>Submit</button>
         </form>
+        <Link to="/captcha">
+        <button>Next</button>
+        </Link>
     </div>
   )
 }

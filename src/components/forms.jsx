@@ -1,5 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet-async"
+import {Link} from "react-router-dom"
 
 export default function Form() {
     const [formData, setFormData] = React.useState(
@@ -151,6 +152,9 @@ export default function Form() {
             <br />
             <button>Submit</button>
         </form>
+        <Link to="/practice">
+        <button>Next</button>
+        </Link>
         </>
     )
 }

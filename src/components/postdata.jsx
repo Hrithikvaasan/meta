@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 export default function CreateUsers(){
     const[formData, setFormData] = React.useState({
@@ -41,6 +42,7 @@ export default function CreateUsers(){
         }))
     }
     return(
+        <>
         <form onSubmit={handleSubmit}>
         <div>
             <label htmlFor = "title">Title</label>
@@ -66,6 +68,10 @@ export default function CreateUsers(){
         </div>
             <button> Submit </button>
             </form>
+            <Link to="/">
+        <button>Next</button>
+        </Link>
+            </>
         
     )
 }
