@@ -13,7 +13,7 @@ function App() {
   // const [selectedGameType, setSelectedGameType] = useState(null);
 
   // const handleClose = () => {
-  //   setModalOpen(false);
+  //   setModalOpen(false); 
   // };
 
   // const handleSelect = (option) => {
